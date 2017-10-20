@@ -1,6 +1,5 @@
 package net.sgoliver.android.recyclerview;
 
-import android.media.Image;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -35,15 +34,15 @@ public class AdaptadorAlumnos
 
         }
 
-        public void bindTitular(Alumno t) {
-            txtNombre.setText(t.getNombre());
-            txtApellidos.setText(t.getApellidos());
+        public void bindAlumno(Alumno a) {
+            txtNombre.setText(a.getNombre());
+            txtApellidos.setText(a.getApellidos());
 
-            if (t.getSexo()=="Masculino"){
+            if (a.getSexo()=="Masculino"){
                 imgSexo.setImageResource(R.mipmap.ic_masculine);
             }
 
-            if (t.getSexo()== "Femenino"){
+            else {
                 imgSexo.setImageResource(R.mipmap.ic_femenino);
 
             }
@@ -71,7 +70,7 @@ public class AdaptadorAlumnos
     public void onBindViewHolder(AlumnosViewHolder viewHolder, int pos) {
         Alumno item = datos.get(pos);
 
-        viewHolder.bindTitular(item);
+        viewHolder.bindAlumno(item);
     }
 
     @Override

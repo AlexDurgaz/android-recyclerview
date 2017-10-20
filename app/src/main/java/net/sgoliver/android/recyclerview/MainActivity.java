@@ -32,15 +32,15 @@ public class MainActivity extends ActionBarActivity {
         datos = new ArrayList<Alumno>();
 
         datos.add(new Alumno("Guillermo", "Nuez Gutierrez","Masculino"));
-        datos.add(new Alumno("Willy", "Nuez Gutierrez","Feminino"));
-        datos.add(new Alumno("Pepe", "Nuez Gutierrez","Feminino"));
-        datos.add(new Alumno("Noto", "Nuez Gutierrez","Feminino"));
-        datos.add(new Alumno("Loco", "Nuez Gutierrez","Masculino"));
-        datos.add(new Alumno("Moco", "Nuez Gutierrez","Feminino"));
-        datos.add(new Alumno("Wally", "Nuez Gutierrez","Feminino"));
-        datos.add(new Alumno("Tito", "Nuez Gutierrez","Feminino"));
-        datos.add(new Alumno("Pipo", "Nuez Gutierrez","Masculino"));
-        datos.add(new Alumno("Nigga", "Nuez Gutierrez","Masculino"));
+        datos.add(new Alumno("Pepita", "Nuez Moscada","Feminino"));
+        datos.add(new Alumno("Maria", "Pimienta Molida","Feminino"));
+        datos.add(new Alumno("Rosa", "Melano Fuerte","Feminino"));
+        datos.add(new Alumno("Loco", "Del Todo","Masculino"));
+        datos.add(new Alumno("Pepa", "Maquina Olimpica","Feminino"));
+        datos.add(new Alumno("Lucia", "Jimenez Perez","Feminino"));
+        datos.add(new Alumno("Tito", "Primero García","Masculino"));
+        datos.add(new Alumno("Pipo", "Pipero Pepino","Masculino"));
+        datos.add(new Alumno("Armando", "Bronca Segura","Masculino"));
 
         recView = (RecyclerView) findViewById(R.id.RecView);
         recView.setHasFixedSize(true);
